@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="lite.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <title>OPTYF</title>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <script src="./sidebarfix.js" defer></script>
+        
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<header id="header1">
+
+  <nav>
+    <div class="topNavBarContent">
+      <div class="topNavBarEl"><img class="logo-img" src="./images/logoapp.png" ></div>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="check">
+  
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+<div class="sidebar">
+    <header>Menu</header>
+      <a  class="active" href="./main.html" >  
+         <i class='bx bx-home-alt' ></i>
+         <span >Accueil</span>
+      </a>
+
+      <a href="./documentation.html">
+        <i class='bx bx-file-find' ></i>
+        <span>Documentation</span>
+      </a>
+
+      <a href="./guide_utilisation.html">
+        <i class='bx bx-file'></i>
+        <span>Guide de l'app</span>
+      </a>
+
+      <!-- <a href="./lien video">
+        <i class='bx bx-file-find'></i>
+        <span>Prise en main</span>
+      </a> -->
+
+
+</div>
+
+</header>
+
+</head>
+
+<body>
+
+  <div class="main">
+    <h2 class="titreSynthese" >Documentation</h2>
+    <h3 class="stitreSynthese">Algorithmes suivi par OPTYF</h3>
+     
+
+    <!-- <iframe class="synthese-frame" src="/synthese/synthese.PNG" width="" ></iframe> -->
+
+  
+    <div class="container2">
+        <!-- <img src="/Backend/Synthese.pdf" id="synthese"> class="synthese-frame"  -->
+        <iframe class="responsive-iframe" src="./documents/Documentation.pdf" scrolling="auto"></iframe>
+    </div>
+      
+    <a href="./main.html"><button class="syntheseBackButtom" type="button" >Accueil</button></a>
+
+            
+  </div>
+    
+</body>
+</html>

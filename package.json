@@ -1,0 +1,35 @@
+{
+  "name": "optyf-app",
+  "productName": "OPTYF",
+  "version": "1.0.0",
+  "description": "Simplification des fonctions logiques avec des méthodes algorithmiques et synthèse de la fonction simplifiée",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+
+  "build": {
+    "appId": "Super32-OPTYF",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "OPTYF-uninstaller",
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "Mouhoun Lydia",
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^18.2.4",
+    "electron-builder": "^23.0.3"
+  }
+}

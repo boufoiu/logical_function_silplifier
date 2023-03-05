@@ -1,0 +1,23 @@
+/* 
+.chargement {
+    font-family: 'Poppins';
+    font-size: 200%;
+    color: #3d898d  ;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.chargement::after{
+    content: '\2026';
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    animation: dots steps(4,end) 1s infinite;
+    width: 0px;
+}
+
+@keyframes dots {
+    to{
+        width: 1em;     /* depends on the font style 
+    }
+} */

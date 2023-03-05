@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="lite.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+            <title>OPTYF</title>
+            <script src="../Linkers/Litterale.js" defer></script>
+            <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+            <link href="loader.css" rel="stylesheet" >
+            <script src="./sidebarfix.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    <header id="header1">
+    
+      <nav>
+        <div class="topNavBarContent">
+          <div class="topNavBarEl"><img class="logo-img" src="./images/logoapp.png" ></div>
+        </div>
+      </nav>
+    
+      <input type="checkbox" id="check">
+      
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+    <div class="sidebar">
+        <header>Menu</header>
+          <a  class="active" href="./main.html" >  
+             <i class='bx bx-home-alt' ></i>
+             <span >Accueil</span>
+          </a>
+    
+          <a href="./documentation.html">
+            <i class='bx bx-file-find' ></i>
+            <span>Documentation</span>
+          </a>
+    
+          <a href="./guide_utilisation.html">
+            <i class='bx bx-file'></i>
+            <span>Guide de l'app</span>
+          </a>
+    
+          <!-- <a href="./lien video">
+            <i class='bx bx-file-find'></i>
+            <span>Prise en main</span>
+          </a> -->
+    
+    
+    </div>
+    
+    </header>
+    
+    </head>
+<body>
+    <body>
+        
+
+      <div class="loaderbox">
+        <div class="chargement"></div>
+      </div>
+       
+
+        <div class="calc">
+          <form>
+            <h2 class="titref">Entrer votre fonction</h2>
+            <h3 class="stitref">2eme etape</h3>
+            <p id="f-literale"></p>
+              <input name="displayLiterale" class="input-fonction" type="text" id="champ2" placeholder="Entrer votre fonction" oninput="inputStyleColor2()">
+              <div class="int">
+                <button class="arithm" type="button" onclick="displayLiterale.value+='!'">!</button>
+                <button class="arithm" type="button" onclick="displayLiterale.value+='.'">.</button>
+                <button class="arithm" type="button" onclick="displayLiterale.value+='+'">+</button>
+              </div>  
+          </form>
+            <h3 class="exp">Vous pouvez la générer aléatoirement</h3>
+              <div id="bloc-rand-litr">
+                <button class="random-litr" type="button" id="rand">Générer aléatoirement</button>
+                <input  class="nb-min" type="number" name="number" id="champ-rand-litr" placeholder="Nombre de minterms" oninput="inputStyleColor3()" >
+              </div>
+            
+            <a href="./getNbvar.html"><button class="previousf" type="button">Précédent</button></a>
+            <!--data-previous-->
+            <button class="res" id="calx">Calculer</button>
+         
+        </div>
+
+     
+</body>
+</html>
